@@ -42,14 +42,14 @@ expect.extend({
     if (pass) {
       return {
         message: () =>
-          `expected ${received} not to be within range ${floor} - ${ceiling}`,
-        pass: true,
+          `expected ${received} to be within range ${floor} - ${ceiling}`,
+        pass: false,
       };
     } else {
       return {
         message: () =>
-          `expected ${received} to be within range ${floor} - ${ceiling}`,
-        pass: false,
+          `expected ${received} not to be within range ${floor} - ${ceiling}`,
+        pass: true,
       };
     }
   },
